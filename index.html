@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP1 Los Serpenteadores</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
         <nav>
             <ul class="navegacion">
                 <li>
-                    <a href=#"Portada"> Portada</a>
+                    <a href="Portada"> Portada</a>
                 </li>
                 <li>
                     <a href="Section1"> Section1 </a>
@@ -58,19 +58,21 @@
             <input type="email" id="email"><br>
 
             <label for="mensaje">Mensaje:</label><br>
-            <textarea name="mensaje" rows="5" cols="28"></textarea><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="28"></textarea><br>
 
             <input id="enviar" type="submit" value="Enviar">
             <input type="reset">
         </form>
     </section>
 
+    <p id="validacion"></p>
+
 
     <footer class="footer">
         <!-- Añadir nombre grupo y nombres de los integrantes en un elemento p o lo que se nos ocurra -->
     </footer> 
     
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 </html>

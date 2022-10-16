@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "ubuntu";
+	src: url(ubuntu.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +15,14 @@ html {
 
 body {
     font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+}
+
+section {
+    margin-top: 4%;
 }
 
 .header {
@@ -21,8 +34,8 @@ body {
 
 .navegacion {
     position: fixed;
-    top: 110px;
-    right: 0;
+    top: 5px;
+    border: 1px solid green;
 
 }
 
@@ -52,4 +65,5 @@ nav a:hover{
 
 #validacion {
     padding-top: 1%;
+    font-family: Arial;
 }

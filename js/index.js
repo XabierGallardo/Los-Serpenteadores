@@ -20,10 +20,8 @@ let books;
 
 // Asignar validacion formulario al hacer click en boton enviar
 docGEBI("enviar").addEventListener("click", function(){
-
 	// Evitar envio por defecto del formulario
 	event.preventDefault();
-
 	validarFormulario();
 	});
 

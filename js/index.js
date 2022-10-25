@@ -5,21 +5,41 @@ function docQS(element) { return doc.querySelector(element); };
 function docGEBI(element) { return doc.getElementById(element); };
 function docQSA(element) { return doc.querySelectorAll(element); };
 
-// USING FETCH API
-// DOCUMENTACIONAPI a usar https://www.anapioficeandfire.com/documentation
-// Ejemplo datos libros GOT
+
+// DOCUMENTACION API a usar https://www.anapioficeandfire.com/documentation
 let url = 'https://www.anapioficeandfire.com/api/books';
-
-// MAKE REQUEST
 let books;
-// window.onload = () => fetch(url, { headers: { 'Accept': 'application/vnd.iceandfire+json' } })
-//     .then(res => res.json())
-//     .then(res => { books = res; log('BOOKS WAS MODIFIED!'); log(books); });
+let book_name = "";
+let myHtml = "<ol>";
 
+docGEBI("boton-api").addEventListener("click", function() {
+
+    fetch(url)
+    .then(response => response.json())
+    .then(response => {
+
+        books = response;
+
+        // Imprimir resultado por consola
+        console.table(books);
+
+        for(let book in books) {
+
+            book_name += "<li>";
+            book_name += books[book].name;
+            book_name += "</li>"
+        }
+        
+        myHtml += book_name;
+        myHtml += "</ol>";
+        docGEBI("contenido-api").innerHTML += myHtml;
+
+    });
+});
 
 
 // Asignar validacion formulario al hacer click en boton enviar
-docGEBI("enviar").addEventListener("click", function(){
+docGEBI("enviar").addEventListener("click", function() {
 	// Evitar envio por defecto del formulario
 	event.preventDefault();
 	validarFormulario();

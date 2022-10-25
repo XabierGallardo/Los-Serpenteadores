@@ -13,16 +13,10 @@
 7. Buscar API de peliculas. Si nos da tiempo hacemos una nosotros
 9. COMPARTIRNOS LOS GITHUB, y en principio vamos con github pages
 
-
-#### Interfaz :triangular_ruler:
+## Interfaz :open_file_folder: :triangular_ruler:
 - **Nav**: Billy
 - **Seccion Portada**: Billy
-- **Seccion API**: Por definir
-- **Seccion por definir**: 
-- **Seccion por definir**:
+- **Seccion Iframe**: 
+- **Seccion Animacion**:
 - **Footer**: Billy
-
-
-- **Iframe**: Por definir
 - **Agregar media queries**
-- **Agregar animaciones**

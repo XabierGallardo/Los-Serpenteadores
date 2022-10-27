@@ -3,6 +3,15 @@
 	src: url(ubuntu.ttf);
 }
 
+@font-face {
+	font-family: "got";
+	src: url(got.ttf);
+}
+
+.got{ font-family: "got"; }
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -91,3 +100,12 @@ nav a:hover{
 #contenido-api ol {
     list-style-type: arabic-indic;
 }
+
+#section-api, #section-iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#section-iframe { height: 550px; }

@@ -42,13 +42,29 @@ section {
     height: auto;
     margin: 0 auto;
     position: sticky;
+    background-color: silver;
 }
 
-.navegacion {
-    position: fixed;
-    top: 5px;
-    border: 1px solid green;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
 
+.navegacion{
+    top: 5px;
+    border: 1px solid red;
+}
+
+.portada{
+    width: 100%;
+    opacity: 70%;
+    margin-top: 0%;
+}
+
+.banner{
+    width: 100%;
 }
 
 .logo {
@@ -73,10 +89,14 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.footer {
+footer {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    background-image: url("../img/bg.jpg");
+    color: white;
 }
 
 #validacion {

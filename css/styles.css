@@ -1,14 +1,16 @@
 @font-face {
-	font-family: "ubuntu";
-	src: url(ubuntu.ttf);
+    font-family: "ubuntu";
+    src: url(ubuntu.ttf);
 }
 
 @font-face {
-	font-family: "got";
-	src: url(got.ttf);
+    font-family: "got";
+    src: url(got.ttf);
 }
 
-.got{ font-family: "got"; }
+.got {
+    font-family: "got";
+}
 
 
 
@@ -45,25 +47,25 @@ section {
     background-color: silver;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 10px;
 }
 
-.navegacion{
+.navegacion {
     top: 5px;
     border: 1px solid red;
 }
 
-.portada{
+.portada {
     width: 100%;
     opacity: 70%;
     margin-top: 0%;
 }
 
-.banner{
+.banner {
     width: 100%;
 }
 
@@ -71,12 +73,12 @@ section {
     width: 150px;
 }
 
-nav li{
+nav li {
     display: inline;
     margin: 0 0 0 15px;
 }
 
-nav a{
+nav a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
@@ -84,7 +86,7 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: #c78c19;
     text-decoration: underline;
 }
@@ -121,11 +123,308 @@ footer {
     list-style-type: arabic-indic;
 }
 
-#section-api, #section-iframe {
+#section-api,
+#section-iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
-#section-iframe { height: 550px; }
+#section-iframe {
+    height: 550px;
+}
+
+
+#animations__section {
+    width: 100%;
+    height: auto;
+    background-color: #FFF190;
+    color: #fff;
+}
+
+.title__animation,
+.subtitle__animation {
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: #331C0E;
+}
+
+.animation__div {
+    background-color: #331C0E;
+    color: #FFF190;
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1rem auto;
+    padding: 1rem auto;
+    transition: all 5s;
+    transition-timing-function: linear;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.info__pre {
+    width: 100%;
+    height: auto;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.btn__Animation {
+    width: 75%;
+    height: 3rem;
+    margin: 1rem auto;
+    padding: 0;
+    background-color: #B9540C;
+    color: #fff;
+    border-radius: 500rem;
+}
+
+.A0remimation_1 {
+    animation-name: Anim_1;
+}
+
+/* paleta de colores GOT - lista desordenada en caunto a claridad
+Zinnwaldite Brown | Hex: #331C0E | RGB: (51, 28, 14)
+    Liver [Organ] | Hex: #67331E | RGB: (103, 51, 30)
+     Alloy Orange | Hex: #B9540C | RGB: (185, 84, 12)
+       Flavescent | Hex: #FFF190 | RGB: (255, 241, 144)
+            Ivory | Hex: #FCFEF0 | RGB: (252, 254, 240)
+             Deer | Hex: #C38D5F | RGB: (195, 141, 95)
+*/
+
+@keyframes Anim_1 {
+
+    0% {
+        background-color: #331C0E;
+    }
+
+    50% {
+        background-color: #C38D5F;
+    }
+
+    100% {
+        background-color: #331C0E;
+    }
+}
+
+.Animation_2 {
+    animation-name: Anim_2;
+}
+
+@keyframes Anim_2 {
+
+    0% {
+        border: 0rem solid #FCFEF0;
+        outline: 0rem solid #FCFEF0;
+    }
+
+    50% {
+        border: 0.5rem solid #FCFEF0;
+        outline: 0.5rem solid #FCFEF0;
+    }
+
+    100% {
+        border: 0rem solid #FCFEF0;
+        outline: 0rem solid #FCFEF0;
+    }
+}
+
+.Animation_3 {
+    animation-name: Anim_3;
+}
+
+@keyframes Anim_3 {
+
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(90deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.Animation_4 {
+    animation-name: Anim_4;
+}
+
+@keyframes Anim_4 {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(360deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.Animation_5 {
+    animation-name: Anim_5;
+}
+
+@keyframes Anim_5 {
+
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.Animation_6 {
+    animation-name: Anim_6;
+}
+
+@keyframes Anim_6 {
+
+    0% {
+        transform: translateX(0rem);
+    }
+
+    25% {
+        transform: translateX(50%);
+    }
+
+    75% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+.Animation_7 {
+    animation-name: Anim_7;
+}
+
+@keyframes Anim_7 {
+
+    0% {
+        transform: translateY(0rem);
+    }
+
+    25% {
+        transform: translateY(50%);
+    }
+
+    75% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0rem);
+    }
+}
+
+.Animation_8 {
+    animation-name: Anim_8;
+}
+
+@keyframes Anim_8 {
+
+    0% {
+        transform: translateX(0rem) translateY(0rem);
+    }
+
+    25% {
+        transform: translateX(50%) translateY(50%);
+    }
+
+    75% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    100% {
+        transform: translateX(0%) translateY(0%);
+    }
+}
+
+.Animation_9 {
+    animation-name: Anim_9;
+}
+
+@keyframes Anim_9 {
+
+    0% {
+        transform: translateX(0rem) translateY(0rem);
+    }
+
+    10% {
+        transform: translateX(50%) translateY(0%);
+    }
+
+    20% {
+        transform: translateX(0%) translateY(50%);
+    }
+
+    30% {
+        transform: translateX(-50%) translateY(0%);
+    }
+
+    40% {
+        transform: translateX(0%) translateY(-50%);
+    }
+
+    50% {
+        transform: translateX(50%) translateY(0%);
+    }
+
+    60% {
+        transform: translateX(0%) translateY(50%);
+    }
+
+    70% {
+        transform: translateX(-50%) translateY(0%);
+    }
+
+    80% {
+        transform: translateX(0%) translateY(-50%);
+    }
+
+    90% {
+        transform: translateX(50%) translateY(0%);
+    }
+
+    100% {
+        transform: translateX(0%) translateY(0%);
+    }
+}
+
+.Animation_10 {
+    animation-name: Anim_10;
+}
+
+@keyframes Anim_10 {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

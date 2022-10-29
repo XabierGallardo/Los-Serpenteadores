@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Atributo defer para ejecutar JavaScript cuando cargue la página -->
-    <script defer src="js/index.js"></script>
+    <!-- <script defer src="js/index.js"></script> -->
 </head>
+
 <body>
 
     <header class="header">
@@ -19,49 +21,47 @@
             <nav>
                 <ul class="navegacion got">
                     <li>
-                        <a href="Portada"> Portada</a>
+                        <a href="#Portada"> Portada</a>
                     </li>
                     <li>
-                        <a href="Section1"> Section1 </a>
+                        <a href="#Section1"> Section1 </a>
                     </li>
                     <li>
-                        <a href="Section2"> Section2</a>
+                        <a href="#Section2"> Section2</a>
                     </li>
                     <li>
-                        <a href="Section3"> Section 3</a>
+                        <a href="#Section3"> Section 3</a>
                     </li>
 
                 </ul>
             </nav>
         </div>
-        </header>
-
-        
         <!-- BILLY crear nav con elementos <li> que apuntes a las secciones de abajo -->
-        </header>
-        
-        <!-- PORTADA con animaciones, opacidad, lo que se nos ocurra -->
-        <section class="portada">
-            <!-- <h1>Seccion Portada</h1> -->
-            <img class="banner" src="img/got-portada.jpg" alt="Banner GOT">
+    </header>
+
+    <!-- PORTADA con animaciones, opacidad, lo que se nos ocurra -->
+    <section class="portada">
+        <!-- <h1>Seccion Portada</h1> -->
+        <img class="banner" src="img/got-portada.jpg" alt="Banner GOT">
     </section>
-    
+
     <!-- MOSTRAR DATOS API 1ª version datos random -->
     <section id="section-api" class="section got">
         <h1>API Game Of Thrones</h1>
         <input type="button" id="boton-api" value="Recibir libros de GOT">
         <div id="contenido-api"></div>
     </section>
-    
+
     <!-- IFRAME -->
     <section class="section" id="section-iframe">
         <h1 class="got">Game of thrones Fandom</h1>
-	<iframe src="https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki" width="800px" height="450px" title="GOT Fandom"></iframe>
+        <!-- <iframe src="https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki" width="800px" height="450px" title="GOT Fandom"></iframe> -->
     </section>
-    
+
     <!-- ANIMACION -->
-    <section class="section">
-        <h1>Seccion Animacion</h1>
+    <section id="animations__section">
+        <h1 class="title__animation">Seccion Animacion</h1>
+        <h3 class="subtitle__animation">(cada recuadro tiene una animación diferente)</h3>
     </section>
 
     <!-- Formulario con validacion  -->
@@ -90,7 +90,9 @@
     <footer class="footer">
         <img src="img/serpenteadores-logo.png" alt="Logo">
         <p class="copyright">&copy copyright Los Serpenteadores - 2022</p>
-    </footer> 
+    </footer>
 
+    <script src="js/index.js"></script>
 </body>
+
 </html>

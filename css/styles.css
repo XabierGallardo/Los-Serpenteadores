@@ -56,7 +56,6 @@ section {
 
 .navegacion {
     top: 5px;
-    border: 1px solid red;
 }
 
 .portada {
@@ -427,4 +426,39 @@ Zinnwaldite Brown | Hex: #331C0E | RGB: (51, 28, 14)
     100% {
         opacity: 1;
     }
+}
+
+
+/* Media Queries*/
+/* Manteniendo el ratio 16:9 hasta 620px*/
+@media (max-width: 1420px) {
+	iframe {
+		width: 1220px;
+		height: 686px;
+	}
+}
+@media (max-width: 1240px) {
+	iframe {
+		width: 800px;
+		height: 450px;
+	}
+}
+
+@media (max-width: 820px) {
+	iframe {
+		width: 600px;
+		height: 338px;
+	}
+}
+
+@media (max-width: 620px) {
+	iframe {
+		width: 350px;
+	}
+}
+
+@media (max-width: 370px) {
+	iframe {
+		width: 200px;
+	}
 }
